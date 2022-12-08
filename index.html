@@ -16,11 +16,11 @@
             <nav>
                 <img src="mylogo.png" class="logo">
                 <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#About">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#header" onclick="sidemenuclose()">Home</a></li>
+                    <li><a href="#About" onclick="sidemenuclose()">About</a></li>
+                    <li><a href="#services" onclick="sidemenuclose()">Services</a></li>
+                    <li><a href="#portfolio" onclick="sidemenuclose()">Portfolio</a></li>
+                    <li><a href="#contact" onclick="sidemenuclose()">Contact</a></li>
                     <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
@@ -40,9 +40,7 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, voluptatibus ullam. Iure
-                        aliquid vero, ipsum sed magni velit repellat molestiae, accusantium totam fuga, consequuntur
-                        architecto doloribus. Iste earum aliquam a distinctio neque sed, suscipit tempore.</p>
+                     <p>Myself Rahul Kumar,I am a developer.I like to design a web using HTML,CSS,JAVASCRIPT.I am interested im music and dancing.I like watching      sports on TV because i am a sports lover.</p>
                     <div class="tab-title">
                         <div class="tab-links tab-link1" onclick="opentab('skills')">Skills</div>
                         <div class="tab-links" onclick="opentab('experience')">Experience</div>
@@ -197,6 +195,9 @@
             sidemenu.style.right = "0";
         }
         function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+        function sidemenuclose(){
             sidemenu.style.right = "-200px";
         }
     </script>
